@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecode - 二维码生成器</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Ecode</h1>
+      <p class="subtitle">二维码生成器</p>
+    </header>
+
+    <div id="qr-container">
+      <div id="qr-code"></div>
+    </div>
+
+    <div id="status-text"></div>
+
+    <div class="input-group">
+      <label for="text-input">自定义内容</label>
+      <textarea id="text-input" placeholder="输入文本或 URL..." rows="3"></textarea>
+    </div>
+
+    <button id="generate-btn">生成二维码</button>
+
+    <button id="reset-btn" class="btn-secondary">重置为页面 URL</button>
+  </div>
+
+  <script src="libs/qrcode.js"></script>
+  <script src="libs/qrcode.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

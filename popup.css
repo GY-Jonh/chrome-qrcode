@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  width: 320px;
+  min-height: 480px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 16px;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4285f4;
+  letter-spacing: 1px;
+}
+
+header .subtitle {
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+#qr-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  min-height: 220px;
+}
+
+#qr-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#status-text {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  min-height: 16px;
+  line-height: 16px;
+  word-break: break-all;
+  max-width: 280px;
+}
+
+#status-text.warning {
+  color: #e65100;
+}
+
+#status-text.error {
+  color: #c62828;
+}
+
+.input-group {
+  width: 100%;
+}
+
+.input-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+#text-input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 13px;
+  font-family: "SF Mono", Monaco, "Cascadia Code", monospace;
+  border: 1.5px solid #dde1e6;
+  border-radius: 8px;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: #fff;
+}
+
+#text-input:focus {
+  border-color: #4285f4;
+  box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.15);
+}
+
+#generate-btn {
+  width: 100%;
+  padding: 11px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #4285f4;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#generate-btn:hover {
+  background-color: #3367d6;
+}
+
+#generate-btn:active {
+  background-color: #2a56c6;
+}
+
+.btn-secondary {
+  width: 100%;
+  padding: 9px 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4285f4;
+  background-color: transparent;
+  border: 1.5px solid #4285f4;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(66, 133, 244, 0.08);
+}
