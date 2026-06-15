@@ -3,6 +3,9 @@
 (function () {
   'use strict';
 
+  // 覆盖 stringToBytes 为 UTF-8 编码，支持中文
+  qrcode.stringToBytes = qrcode.stringToBytesFuncs['UTF-8'];
+
   const qrCodeEl = document.getElementById('qr-code');
   const textInput = document.getElementById('text-input');
   const generateBtn = document.getElementById('generate-btn');
